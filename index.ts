@@ -1,4 +1,4 @@
-import { Hono } from 'https://deno.land/x/hono/mod.ts'
+import { Hono } from 'https://deno.land/x/hono@v3.11.10/mod.ts'
 
 const app = new Hono()
 
@@ -7,6 +7,6 @@ app.get('/', (c) => {
 })
 
 app.get('/wappasutei',(c)=>{
-  return c.text('fuck ctkp')
+  return c.text
 })
 Deno.serve(app.fetch)
