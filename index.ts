@@ -6,5 +6,5 @@ app.get('/', (c) => {
   return c.text('Hello Deno!')
 })
 
-app.get('/wappasutei',serveStatic({ path: './static/index.html' }))
+app.get('/wappasutei',serveStatic({ path: './static/jojo.html' }))
 Deno.serve(app.fetch)
