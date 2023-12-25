@@ -7,6 +7,6 @@ app.get('/', (c) => {
 })
 
 app.get('/wappasutei',(c)=>{
-  return c.text
+  return <html><>
 })
 Deno.serve(app.fetch)
